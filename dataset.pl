@@ -58,6 +58,10 @@ genre(X,"science_fiction"):- science_fiction(X,_,_,_,_).
 genre(X,"action"):- action(X,_,_,_,_).
 genre(X,"drama"):- drama(X,_,_,_,_).
 
+age(X,Y) :- 
+    (X<12,Y="child");
+    (Y="adult").
+
 film(X, Y, Z, W,R):- comedy(X, Y, Z, W,R);
                 superheros(X, Y, Z, W,R);
                 cartoon(X, Y, Z, W,R);
@@ -166,11 +170,28 @@ Rating > 7.0.
 
 start(Y) :-	
 
-                write('Expert System - Film Recommender OMNIBUS 2000'),nl,
-                write('Please answer questions below'),nl,
-               	write('It helps to'),write('   What is your name? '),
-               	read(Name),nl ,write('hello '),write(Name),nl, film(Y,_,_,_,_).
+          
+              write('Expert System - Film Recommender OMNIBUS 2000'), nl,
+              write('Please answer the questions below'), nl,
     
+              write('What is your name? '), read(Name), nl,
+              write('Hello '), write(Name), nl,
+    
+              write('Enter your age? '),  nl,read(Age),age(Age,C),
+              write('Enter your gender?'),nl,
+              write('1- Male'),nl,
+              write('2- Female'), 
+              read(Gender), nl,((Gender=:=1,G="male");(G="female")),
+
+              write('How about your mood? '),nl,
+              write('1- Happy'),nl,
+              write('2- Sad'),nl,
+              write('3- Neutral'),nl,
+              read(Mood), nl, ((Mood=:=1,M="happy");(Mood=:=2,M="sad");(M="neutral")),
+
+    
+              complex_recommend(G,M, C, Film),
+              write('We recommend you watch: '), write(Film), nl.
     
     
     
