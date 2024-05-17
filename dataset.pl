@@ -51,12 +51,12 @@ drama("12 Years a Slave","Steve McQueen",[ "Chiwetel Ejiofor", "Michael Fassbend
 list_member(X,[X|_]).
 list_member(X,[_|TAIL]) :- list_member(X,TAIL). % to get actor from the list
 
-genre(X,"comedy"):- comedy(X,_,_,_,_).
-genre(X,"superheros"):- superheros(X,_,_,_,_).
-genre(X,"cartoon"):- cartoon(X,_,_,_,_).
-genre(X,"science_fiction"):- science_fiction(X,_,_,_,_).
-genre(X,"action"):- action(X,_,_,_,_).
-genre(X,"drama"):- drama(X,_,_,_,_).
+genre(X,comedy):- comedy(X,_,_,_,_).
+genre(X,superheros):- superheros(X,_,_,_,_).
+genre(X,cartoon):- cartoon(X,_,_,_,_).
+genre(X,science_fiction):- science_fiction(X,_,_,_,_).
+genre(X,action):- action(X,_,_,_,_).
+genre(X,drama):- drama(X,_,_,_,_).
 
 age(X,Y) :- 
     (X<12,Y="child");
@@ -112,7 +112,7 @@ filtered_film(Film, Genre, Year, Rating) :-
 
 complex_recommend("male", "happy", "adult", Film) :-
     (action(Film, _, _, _, Rating); comedy(Film, _, _, _, Rating)),
-    Rating > 7.5.
+    Rating > 6.
  
 complex_recommend("male", "happy", "adult", Film) :-
 comedy(Film, _, _, _, Rating),
@@ -168,10 +168,10 @@ Rating > 7.0.
 
 %% user input 
 
-start(Y) :-	
+start(Film) :-	
 
           
-              write('Expert System - Film Recommender OMNIBUS 2000'), nl,
+              write('Expert System - Film Recommender'), nl,
               write('Please answer the questions below'), nl,
     
               write('What is your name? '), read(Name), nl,
@@ -188,15 +188,47 @@ start(Y) :-
               write('2- Sad'),nl,
               write('3- Neutral'),nl,
               read(Mood), nl, ((Mood=:=1,M="happy");(Mood=:=2,M="sad");(M="neutral")),
+    
+              write('Enter your genre of film you want?'),nl,
+              write('1- comedy'),nl,
+              write('2- superheros'),nl,
+              write('3- cartoon'),nl,
+              write('4- science_fiction'),nl,
+              write('5- action'),nl,
+              write('6- drama'),nl,
 
+              read(Genre), write('We recommend you watch: '),nl,genre(Film,Genre),
+              complex_recommend(G,M, C, Film) .
+   
+start_filter(Film):-
+    		  write('Expert System - Film filtering'), nl,
+              write('Please answer the questions below'), nl,
     
-              complex_recommend(G,M, C, Film),
-              write('We recommend you watch: '), write(Film), nl.
+              write('What is your name? '), read(Name), nl,
+              write('Hello '), write(Name), nl,
+    
+              write('from any year you choose? '),  nl,read(Year),
+    
+              write('Enter rating of film you want?'),nl,
+              read(Rating), nl,
+
+              write('Enter your genre of film you want?'),nl,
+              write('1- comedy'),nl,
+              write('2- superheros'),nl,
+              write('3- cartoon'),nl,
+              write('4- science_fiction'),nl,
+              write('5- action'),nl,
+              write('6- drama'),nl,
+              read(Genre),
+    
+              write('Enter name of director you love'),nl,
+              read(Director), nl,
+    
+    		  write('We recommend you watch: '),nl,
+    		  filtered_film(Film,Genre,Year,Rating), director_of_film(Film,Director).
     
     
-    
-    %Complex_recommend(gender,status,age,film)%
-    
+  
     
     
     
