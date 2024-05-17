@@ -1,6 +1,6 @@
 
-% knowledge base
-%comedy%
+%knowledge_base
+%comedy
 comedy("Ace Ventura: Pet Detective", "Tom Shadyac",["Jim Carrey", "Courteney Cox", "Sean Young", "Tone Loc", "Dan Marino"], 1994, 6.9).
 comedy("The Grand Budapest Hotel", "Wes Anderson",["Ralph Fiennes", "Tony Revolori", "Saoirse Ronan", "Adrien Brody", "Willem Dafoe"],2014, 8.1).
 comedy("Crazy Rich Asians", "Jon M. Chu",["Constance Wu", "Henry Golding", "Awkwafina", "Michelle Yeoh", "Gemma Chan"],2018, 6.9).
@@ -10,21 +10,21 @@ comedy("Ferris Bueller's Day Off", "John Hughes",["Matthew Broderick", "Alan Ruc
 comedy("Coming to America", "John Landis",["Eddie Murphy", "Arsenio Hall", "James Earl Jones", "John Amos", "Madge Sinclair"],1988, 7.0).
 comedy("The Breakfast Club", "John Hughes",["Emilio Estevez", "Anthony Michael Hall", "Judd Nelson", "Molly Ringwald", "Ally Sheedy"],1985, 7.8).
  
-%superheros%
+%superheros
 superheros("Thor: Love and Thunder","Taika Waititi",["Chris Hemsworth","Natalie Portman","Tessa Thompson","Christian Bale","Taika Waititi"],2022, 7.9).
 superheros("Spider-Man: No Way Home","Jon Watts",["Tom Holland","Zendaya","Benedict Cumberbatch","Jacob Batalon","Willem Dafoe"],2021, 8.5).
 superheros("Avengers: Endgame","Joe Russo",["Robert Downey Jr.","Chris Evans","Tom Holland","Chris Hemsworth","Mark Ruffalo"],2019, 8.4).
 superheros("Guardians of the Galaxy","James Gunn",["Chris Pratt","Zoe Saldana","Dave Bautista","Vin Diesel","Bradley Cooper"],2014, 8.0).
 superheros("Doctor Strange","Scott Derrickson",["Benedict Cumberbatch","Chiwetel Ejiofor","Rachel McAdams","Benedict Wong","Mads Mikkelsen"],2016, 7.5).
  
-%cartoon%
+%cartoon
 cartoon("Kung Fu Panda","Mark Osborne",["Jack Black","Dustin Hoffman","Angelina Jolie","Ian McShane","Jackie Chan"],2008, 7.6).
 cartoon("The Incredibles","Brad Bird",["Craig T. Nelson","Holly Hunter","Samuel L. Jackson","Jason Lee","Sarah Vowell"],2004, 8.0).
 cartoon("Megamind","Tom McGrath",["Will Ferrell","Tina Fey","Jonah Hill","David Cross","Brad Pitt"],2010, 7.2).
 cartoon("Big Hero 6","Don Hall",["Ryan Potter","Scott Adsit","Jamie Chung","Damon Wayans Jr.","Genesis Rodriguez"],2014, 7.8).
 cartoon("Wreck-It Ralph","Rich Moore",["John C. Reilly","Sarah Silverman","Jack McBrayer","Jane Lynch","Alan Tudyk"],2012, 7.7).
  
-%science_fiction%
+%science_fiction
 science_fiction("Blade Runner 2049","Denis Villeneuve", ["Ryan Gosling", "Harrison Ford", "Ana de Armas", "Sylvia Hoeks", "Jared Leto"], 2017, 8.0).
 science_fiction("Interstellar","Christopher Nolan",["Matthew McConaughey","Anne Hathaway"," Jessica Chastain", "Michael Caine", "Casey Affleck"] , 2014, 8.6).
 science_fiction("Inception","Christopher Nolan",["Leonardo DiCaprio","Joseph Gordon-Levitt","Ellen Page","Tom Hardy", " Ken Watana"], 2010, 8.8).
@@ -33,7 +33,7 @@ science_fiction("The Terminator","James Cameron", ["Arnold Schwarzenegger", "Mic
 science_fiction("Avatar", "James Cameron",["Sam Worthington", "Zoe Saldana", "Sigourney Weaver", "Stephen Lang", "Michelle Rodriguez"], 2009, 7.8).
 science_fiction("The Matrix","The Wachowskis", ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss", "Hugo Weaving", "Joe Pantoliano"], 1999, 8.7).
  
-%Action%
+%Action
 action("John Wick","Chad Stahelski", [ "Keanu Reeves", "Ian McShane", "Willem Dafoe", "John Leguizamo","Lance Reddick"] ,2014, 7.4).
 action("Mad Max: Fury Road","George Miller",[ "Tom Hardy","Charlize Theron","Nicholas Hoult","Hugh Keays,Byrne","Rosie Huntington","Whiteley"],2015, 8.1).
 action("The Raid: Redemption","Gareth Evans",[ "Iko Uwais", "Yayan Ruhian", "Donny Alamsyah", "Joe Taslim", "Pierre Gruno"], 2011, 7.6).
@@ -41,15 +41,240 @@ action("Die Hard", "John McTiernan",["Bruce Willis", "Alan Rickman", "Bonnie Bed
 action("The Dark Knight","Christopher Nolan", ["Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine", "Maggie Gyllenhaal"], 2008, 9.0).
 action("Mission: Impossible - Fallout","Christopher McQuarrie" ,["Tom Cruise", "Henry Cavill", "Ving Rhames", "Simon Pegg", "Rebecca Ferguson"], 2018, 7.7).
  
-%Drama%
+%Drama
 drama("The Shawshank Redemption","Frank Darabont" ,["Tim Robbins", "Morgan Freeman", "Bob Gunton", "William Sadler","Clancy Brown"], 1994, 9.3).
 drama("The Pursuit of Happyness","Gabriele Muccino",["Will Smith", "Jaden Smith", "Thandie Newton", "Brian Howe", "James Karen"],2006, 8.0).
 drama("12 Years a Slave","Steve McQueen",[ "Chiwetel Ejiofor", "Michael Fassbender", "Lupita Nyongo", "Sarah Paulson", "Benedict Cumberbatch"], 2013, 8.1).
  
-% relations
+%preferences
+%data_collected_from_google_forms_quessionaire
+user("omar_aldawy",
+["Jim Carrey", "Tom Holland", "Will Ferrell", "Matthew McConaughey", "Keanu Reeves", "Will Smith"],
+["Christopher Nolan", "George Miller", "Christopher McQuarrie", "Steve McQueen"], 
+["Ace Ventura: Pet Detective", "Ghostbusters"], 
+["Avengers: Endgame", "Doctor Strange"], 
+["Megamind"], 
+["Interstellar"], 
+["Die Hard", "Mission: Impossible - Fallout"], 
+["The Pursuit of Happyness", "12 Years a Slave"]).
+
+
+user("adam",
+["Ralph Fiennes", "Bill Murray", "Tom Holland", "John C. Reilly", "Keanu Reeves", "Iko Uwais", "Tom Cruise"], 
+["Ivan Reitman", "John Landis", "Brad Bird", "Rich Moore", "James Cameron", "Frank Darabont"], 
+["The Grand Budapest Hotel", "Crazy Rich Asians", "The Breakfast Club"], 
+["Spider-Man: No Way Home", "Avengers: Endgame", "Doctor Strange"], 
+["The Incredibles", "Megamind", "Wreck-It Ralph"], 
+["Interstellar", "Inception", "The Terminator", "The Matrix"], 
+["Die Hard", "The Dark Knight"], 
+["12 Years a Slave"]).
+
+user("philopatir_mina",
+["Jim Carrey", "Leonardo DiCaprio", "Tom Cruise", "Will Smith"], 
+["Ivan Reitman", "George Miller", "Frank Darabont", "Gabriele Muccino"], 
+["Caddyshack", "Ferris Bueller's Day Off"], 
+["Spider-Man: No Way Home", "Doctor Strange"], 
+["Kung Fu Panda", "Big Hero 6"], 
+["Blade Runner 2049", "Inception", "The Terminator"], 
+["The Raid: Redemption", "The Dark Knight"], 
+["12 Years a Slave"]).
+
+user("maria_maher",
+["Constance Wu", "Emilio Estevez", "Tom Holland", "Craig T. Nelson", "Ryan Potter", "John C. Reilly", "Leonardo DiCaprio", "Tom Hardy"],
+["Tom Shadyac", "Wes Anderson", "Ivan Reitman", "John Hughes", "Mark Osborne", "Gabriele Muccino"], 
+["Ghostbusters", "Ferris Bueller's Day Off", "Coming to America"], 
+["Thor: Love and Thunder", "Spider-Man: No Way Home", "Avengers: Endgame", "Guardians of the Galaxy"], 
+["Big Hero 6"], ["Inception", "Dune", "The Terminator", "The Matrix"], ["Mad Max: Fury Road", "The Dark Knight"], 
+["The Shawshank Redemption", "The Pursuit of Happyness"]).
+
+user("abdullah_mohamed_ali_zein",
+["Jim Carrey", "Ralph Fiennes", "Bill Murray", "Tom Holland", "Benedict Cumberbatch", "Ryan Potter", "Ryan Gosling", "Tom Cruise"], 
+["Tom Shadyac", "Harold Ramis", "John Hughes", "Jon Watts", "Christopher Nolan", "George Miller"], 
+["Ace Ventura: Pet Detective", "Crazy Rich Asians", "Ghostbusters", "The Breakfast Club"], 
+["Thor: Love and Thunder", "Spider-Man: No Way Home", "Guardians of the Galaxy"], 
+["The Incredibles", "Megamind", "Big Hero 6"], ["Inception", "The Terminator", "Avatar"], 
+["Mad Max: Fury Road", "Die Hard", "The Dark Knight"], 
+["The Pursuit of Happyness", "12 Years a Slave"]).
+
+user("bahaa_khaled",
+["Constance Wu", "Matthew Broderick", "Emilio Estevez", "Tom Holland", "Robert Downey Jr.", "Chris Pratt", "Ryan Gosling", "Leonardo DiCaprio", "Keanu Reeves", "Bruce Willis", "Iko Uwais"], 
+["Ivan Reitman", "Jon Watts", "Brad Bird", "Tom McGrath", "Rich Moore", "Frank Darabont"], 
+["Ace Ventura: Pet Detective", "The Grand Budapest Hotel", "Crazy Rich Asians", "Ferris Bueller's Day Off"], 
+["Thor: Love and Thunder", "Spider-Man: No Way Home", "Doctor Strange"], 
+["Kung Fu Panda", "Megamind", "Big Hero 6"], 
+["Inception", "Dune", "Avatar"], 
+["The Raid: Redemption", "Mission: Impossible - Fallout"],
+["The Shawshank Redemption", "12 Years a Slave"]).
+
+user("youssef_mahmoud",
+["Ralph Fiennes", "Bill Murray", "Timothée Chalamet", "Sam Worthington", "Keanu Reeves", "Christian Bale"], 
+["Ivan Reitman", "Jon Watts", "Scott Derrickson", "Mark Osborne", "Tom McGrath", "John McTiernan"], 
+["Ace Ventura: Pet Detective", "The Grand Budapest Hotel", "Caddyshack"], 
+["Spider-Man: No Way Home", "Avengers: Endgame"], 
+["Megamind", "Big Hero 6"], 
+["Interstellar", "Dune"],
+["The Raid: Redemption", "Die Hard", "The Dark Knight"], 
+["The Pursuit of Happyness"]).
+
+user("armia",
+["Chris Hemsworth", "Tom Holland", "Robert Downey Jr.", "Chris Pratt", "Benedict Cumberbatch", "Ryan Potter", "Christian Bale", "Tom Cruise"], 
+["Jon M. Chu", "Ivan Reitman", "John Landis", "James Gunn", "Rich Moore", "Steve McQueen"], 
+["Ghostbusters", "The Breakfast Club"], 
+["Thor: Love and Thunder", "Spider-Man: No Way Home", "Avengers: Endgame", "Guardians of the Galaxy", "Doctor Strange"], 
+["Kung Fu Panda", "The Incredibles", "Big Hero 6"], 
+["Interstellar", "Dune", "The Matrix"], 
+["John Wick", "Die Hard", "The Dark Knight", "Mission: Impossible - Fallout"], 
+["12 Years a Slave"]).
+
+user("pola_hany_fayez",
+["Constance Wu", "Bill Murray", "Matthew Broderick", "Matthew McConaughey", "Timothée Chalamet", "Keanu Reeves", "Tom Cruise"],
+["Jon M. Chu", "John Landis", "James Gunn", "Brad Bird", "Don Hall", "Christopher McQuarrie"],
+["The Grand Budapest Hotel", "Crazy Rich Asians", "Ghostbusters"],
+["Thor: Love and Thunder", "Spider-Man: No Way Home", "Avengers: Endgame"],
+["Kung Fu Panda", "The Incredibles", "Megamind"],
+["Interstellar", "Inception", "The Terminator"],
+["Mad Max: Fury Road", "The Dark Knight"],
+["The Pursuit of Happyness"]).
+
+user("pierre_jack",
+["Chevy Chase", "Tom Holland", "Benedict Cumberbatch", "Jack Black", "Will Ferrell", "Ryan Gosling", "Tom Hardy", "Bruce Willis"],
+["Harold Ramis", "John Landis", "Joe Russo", "Mark Osborne", "Don Hall", "James Cameron", "The Wachowskis", "Christopher McQuarrie"],
+["Ace Ventura: Pet Detective", "Crazy Rich Asians", "Ghostbusters", "Coming to America", "The Breakfast Club"],
+["Thor: Love and Thunder", "Spider-Man: No Way Home", "Avengers: Endgame", "Guardians of the Galaxy", "Doctor Strange"],
+["Kung Fu Panda", "The Incredibles", "Big Hero 6"],
+["Inception", "Dune", "Avatar"],
+["John Wick", "Die Hard", "The Dark Knight"],
+["The Shawshank Redemption", "The Pursuit of Happyness"]).
+
+user("andrew_achraf",
+["Matthew Broderick", "Emilio Estevez", "Tom Holland", "Timothée Chalamet", "Arnold Schwarzenegger", "Sam Worthington"],
+["John Hughes", "Taika Waititi", "Scott Derrickson", "Rich Moore"],
+["Crazy Rich Asians", "Caddyshack", "Ghostbusters", "Ferris Bueller's Day Off"],
+["Spider-Man: No Way Home", "Avengers: Endgame", "Doctor Strange"],
+["Kung Fu Panda", "The Incredibles", "Wreck-It Ralph"],
+["Inception", "Dune", "Avatar"],
+["The Raid: Redemption", "Die Hard"],
+["The Shawshank Redemption", "The Pursuit of Happyness"]).
+
+user("amir_ragae",
+["Chevy Chase", "Will Ferrell", "Christian Bale", "Will Smith"],
+["Jon M. Chu", "James Cameron", "George Miller", "Gabriele Muccino"], 
+["The Grand Budapest Hotel", "Caddyshack", "Ferris Bueller's Day Off"], 
+["Thor: Love and Thunder", "Spider-Man: No Way Home"], 
+["Kung Fu Panda", "Megamind"], 
+["Blade Runner 2049", "Interstellar"], 
+["The Raid: Redemption", "Die Hard", "The Dark Knight"], 
+["The Shawshank Redemption", "The Pursuit of Happyness", "12 Years a Slave"]).
+
+user("karene_antoine",
+["Constance Wu", "Bill Murray", "Tom Holland", "John C. Reilly", "Sam Worthington", "Bruce Willis", "Will Smith"], 
+["Jon M. Chu", "John Hughes", "Taika Waititi", "Jon Watts", "Brad Bird", "Tom McGrath", "Rich Moore", "Christopher Nolan"], 
+["Ace Ventura: Pet Detective", "Ghostbusters", "Coming to America", "The Breakfast Club"], 
+["Thor: Love and Thunder"], ["Megamind", "Big Hero 6", "Wreck-It Ralph"], 
+["Blade Runner 2049"], 
+["The Dark Knight"], 
+["The Shawshank Redemption", "The Pursuit of Happyness", "12 Years a Slave"]).
+
+user("mahmoud_abdelghany",
+["Ralph Fiennes", "Bill Murray", "Emilio Estevez", "Tom Holland", "Benedict Cumberbatch", "Will Smith"], 
+["Ivan Reitman", "Taika Waititi", "Tom McGrath", "Rich Moore", "Christopher McQuarrie"], 
+["Crazy Rich Asians", "Ghostbusters", "Ferris Bueller's Day Off", "Coming to America"], 
+["Thor: Love and Thunder", "Avengers: Endgame", "Doctor Strange"], 
+["Megamind", "Wreck-It Ralph"], 
+["Interstellar", "Inception", "Dune"], 
+["Die Hard", "The Dark Knight"], 
+["The Pursuit of Happyness", "12 Years a Slave"]).
+
+user("mariam_sameh",
+["Chevy Chase", "Matthew Broderick", "Robert Downey Jr."], 
+["Mark Osborne", "Brad Bird", "Denis Villeneuve", "George Miller"], 
+["Ghostbusters", "Ferris Bueller's Day Off", "Coming to America", "The Breakfast Club"], 
+["Thor: Love and Thunder", "Spider-Man: No Way Home", "Avengers: Endgame", "Guardians of the Galaxy", "Doctor Strange"], 
+["Kung Fu Panda", "The Incredibles", "Megamind", "Big Hero 6", "Wreck-It Ralph"],
+["Blade Runner 2049"], 
+["The Dark Knight"], 
+["12 Years a Slave"]).
+
+user("mikey_jonson",
+["Jim Carrey", "Ralph Fiennes", "Matthew Broderick", "Chris Hemsworth", "Tom Holland", "Jack Black", "Ryan Gosling", "Leonardo DiCaprio", "Sam Worthington", "Bruce Willis"], 
+["Jon M. Chu", "Jon Watts", "Joe Russo", "Brad Bird", "Don Hall", "Gareth Evans"], 
+["Ace Ventura: Pet Detective", "Crazy Rich Asians", "Ghostbusters", "The Breakfast Club"], 
+["Thor: Love and Thunder", "Spider-Man: No Way Home", "Avengers: Endgame", "Guardians of the Galaxy", "Doctor Strange"], 
+["Kung Fu Panda", "The Incredibles", "Big Hero 6"], ["Blade Runner 2049", "Interstellar", "The Terminator", "The Matrix"], 
+["John Wick", "Mad Max: Fury Road", "The Raid: Redemption", "Mission: Impossible - Fallout"], 
+["The Shawshank Redemption", "12 Years a Slave"]).
+
+user("george_tharwat_fawzy", 
+["Jim Carrey", "Bill Murray", "Eddie Murphy", "Craig T. Nelson", "Ryan Potter", "Christian Bale", "Will Smith"],
+["Ivan Reitman", "Rich Moore", "Christopher Nolan", "Christopher McQuarrie"],
+["Ace Ventura: Pet Detective", "Crazy Rich Asians", "Caddyshack"], 
+["Spider-Man: No Way Home", "Doctor Strange"], 
+["Megamind", "Big Hero 6"],
+["Blade Runner 2049", "Inception", "The Terminator"], 
+["Mad Max: Fury Road", "The Raid: Redemption", "The Dark Knight"], 
+["The Shawshank Redemption", "The Pursuit of Happyness", "12 Years a Slave"]).
+
+user("mostafa_elkaranshawy",
+["Chevy Chase", "Emilio Estevez", "Ryan Potter", "Ryan Gosling", "Matthew McConaughey"], 
+["Jon M. Chu", "John Hughes", "Taika Waititi", "Joe Russo", "Chad Stahelski"], 
+["The Grand Budapest Hotel", "Ghostbusters", "Coming to America"], 
+["Thor: Love and Thunder", "Avengers: Endgame", "Doctor Strange"], 
+["The Incredibles", "Big Hero 6"], ["Interstellar", "Dune", "Avatar"], 
+["John Wick", "The Raid: Redemption"], 
+["The Shawshank Redemption", "The Pursuit of Happyness", "12 Years a Slave"]).
+
+user("yomna_yasser",
+["Ralph Fiennes", "Chevy Chase", "Emilio Estevez", "Benedict Cumberbatch", "John C. Reilly", "Leonardo DiCaprio", "Sam Worthington", "Keanu Reeves", "Tom Hardy", "Christian Bale", "Chiwetel Ejiofor"], 
+["Wes Anderson", "Ivan Reitman", "Scott Derrickson", "Brad Bird", "Don Hall", "Denis Villeneuve", "James Cameron", "George Miller", "Frank Darabont"], 
+["Ace Ventura: Pet Detective", "Ghostbusters", "Ferris Bueller's Day Off", "Coming to America", "The Breakfast Club"], 
+["Avengers: Endgame"], 
+["Kung Fu Panda", "Megamind", "Big Hero 6"], 
+["Blade Runner 2049", "Interstellar", "Inception", "The Terminator"], 
+["John Wick", "The Raid: Redemption"], 
+["The Shawshank Redemption", "The Pursuit of Happyness", "12 Years a Slave"]).
+
+user("ranime_shehata",
+["Ralph Fiennes", "Eddie Murphy", "Tom Holland", "Jack Black", "Will Ferrell"], 
+["Jon M. Chu", "John Hughes", "Joe Russo", "The Wachowskis", "John McTiernan", "Christopher McQuarrie"], 
+["Caddyshack", "Ghostbusters", "Coming to America"], ["Avengers: Endgame", "Guardians of the Galaxy"], 
+["The Incredibles", "Big Hero 6"], ["Interstellar", "Avatar"], ["Mad Max: Fury Road", "The Raid: Redemption", "Die Hard"], 
+["The Pursuit of Happyness", "12 Years a Slave"]).
+
+user("john",
+["Ralph Fiennes", "Eddie Murphy", "Ryan Gosling", "Leonardo DiCaprio", "Tom Hardy"], 
+["Harold Ramis", "Joe Russo", "Tom McGrath", "James Cameron", "Gareth Evans"], 
+["The Grand Budapest Hotel"], 
+["Avengers: Endgame"], 
+["Wreck-It Ralph"], 
+["Interstellar", "Inception"], 
+["John Wick", "The Dark Knight", "Mission: Impossible - Fallout"], 
+["The Shawshank Redemption"]).
+
+user("marc",
+["Tom Holland", "Jack Black", "Matthew McConaughey"], 
+["Mark Osborne", "Brad Bird", "Tom McGrath", "Don Hall"], 
+["Coming to America"], 
+["Spider-Man: No Way Home"], 
+["Kung Fu Panda"], 
+["Avatar"], 
+["The Dark Knight"], 
+["12 Years a Slave"]).
+
+user("kirolos_emad",
+["Jim Carrey", "Matthew Broderick", "Eddie Murphy", "Tom Holland", "Robert Downey Jr.", "Chris Pratt", "John C. Reilly", "Timothée Chalamet", "Arnold Schwarzenegger", "Bruce Willis", "Tom Cruise", "Tim Robbins"], 
+["John Hughes", "John McTiernan"], 
+["Crazy Rich Asians"], 
+["Thor: Love and Thunder", "Spider-Man: No Way Home"], 
+["Kung Fu Panda", "The Incredibles"], 
+["Blade Runner 2049", "Dune", "The Terminator"], 
+["John Wick", "The Raid: Redemption", "Die Hard", "Mission: Impossible - Fallout"], 
+["12 Years a Slave"]).
+
+
+%relations%
 
 list_member(X,[X|_]).
-list_member(X,[_|TAIL]) :- list_member(X,TAIL). % to get actor from the list
+list_member(X,[_|TAIL]) :- list_member(X,TAIL). %to_get_actor_from_the_list
 
 genre(X,comedy):- comedy(X,_,_,_,_).
 genre(X,superheros):- superheros(X,_,_,_,_).
@@ -71,8 +296,8 @@ film(X, Y, Z, W,R):- comedy(X, Y, Z, W,R);
 
 film_year(Y, N):- film(N, _, _, Y,_).
 
-films_of_year(X ,Y, O):- film_year(Y, X), Y < 2000, O = "Older". % returns films of given years
-films_of_year(X ,Y, O):- film_year(Y, X), Y >= 2000, O = "Recent".
+films_of_year(X ,Y, O):- film_year(Y, X), Y < 2000,O="Older". % returns films of given years
+films_of_year(X ,Y, O):- film_year(Y, X), Y >= 2000,O="Recent".
 films_of_year(X ,Y):- film_year(Y, X).
 
 film_with_actor(X,Z) :- film(X,_,Y,_,_) , list_member(Z,Y).
@@ -108,7 +333,7 @@ recommend("female", "neutral", "child", Film) :- cartoon(Film, _, _, _, _); supe
 
 filtered_film(Film, Genre, Year, Rating) :-
     film(Film,_,_,_,_),genre(Film,Genre),year_greater_than(Film,Year),
-    rating_greater_than(Film, Rating).
+    rating_greater_than(Film,Rating).
 
 complex_recommend("male", "happy", "adult", Film) :-
     (action(Film, _, _, _, Rating); comedy(Film, _, _, _, Rating)),
@@ -226,10 +451,3 @@ start_filter(Film):-
     
     		  write('We recommend you watch: '),nl,
     		  filtered_film(Film,Genre,Year,Rating), director_of_film(Film,Director).
-    
-    
-  
-    
-    
-    
-    
