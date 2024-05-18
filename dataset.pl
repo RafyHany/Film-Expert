@@ -366,96 +366,133 @@ filtered_film(Film, Genre, Year, Rating) :-
     film(Film,_,_,_,_),genre(Film,Genre),year_greater_than(Film,Year),
     rating_greater_than(Film,Rating).
 
+% Recommendation rule for "happy" adult males
 complex_recommend("male", "happy", "adult", Film) :-
-    (action(Film, _, _, _, Rating); comedy(Film, _, _, _, Rating)),
+    (action(Film, _, _, _, Rating); 
+    comedy(Film, _, _, _, Rating); 
+    drama(Film, _, _, _, Rating)),
     Rating > 6.
  
-complex_recommend("male", "happy", "adult", Film) :-
-comedy(Film, _, _, _, Rating),
-Rating > 7.0. % Lower rating threshold for comedies.
-
-complex_recommend("male", "happy", "adult", Film) :-
-drama(Film, _, _, _, Rating),
-Rating > 8.0. % Higher rating threshold for dramas.
-
+% Recommendation rule for "happy" adult females
 complex_recommend("female", "happy", "adult", Film) :-
-        (drama(Film, _, _, _, Rating); comedy(Film, _, _, _, Rating)),
-Rating > 7.5.
-
+    (comedy(Film, _, _, _, Rating); 
+    drama(Film, _, _, _, Rating)),
+    Rating > 6.
+ 
+% Recommendation rule for "sad" adult males
 complex_recommend("male", "sad", "adult", Film) :-
-drama(Film, _, _, _, Rating),
-Rating > 7.5.
-
+    drama(Film, _, _, _, Rating),
+    Rating > 6.
+ 
+% Recommendation rule for "sad" adult females
 complex_recommend("female", "sad", "adult", Film) :-
-        (drama(Film, _, _, _, Rating); superheros(Film, _, _, _, Rating)),
-Rating > 7.5.
-
+    drama(Film, _, _, _, Rating),
+    Rating > 6.
+ 
+% Recommendation rule for "neutral" adult males
 complex_recommend("male", "neutral", "adult", Film) :-
-        (superheros(Film, _, _, _, Rating); science_fiction(Film, _, _, _, Rating)),
-Rating > 7.0.
-
+    (superheros(Film, _, _, _, Rating); 
+    science_fiction(Film, _, _, _, Rating)),
+    Rating > 6.
+ 
+% Recommendation rule for "neutral" adult females
 complex_recommend("female", "neutral", "adult", Film) :-
-        (superheros(Film, _, _, _, Rating); science_fiction(Film, _, _, _, Rating)),
-Rating > 7.0.
-
+    (superheros(Film, _, _, _, Rating); 
+    science_fiction(Film, _, _, _, Rating)),
+    Rating > 6.
+ 
+% Recommendation rule for "happy" male children
 complex_recommend("male", "happy", "child", Film) :-
-cartoon(Film, _, _, _, Rating),
-Rating > 7.0.
-
+    (cartoon(Film, _, _, _, Rating); 
+    superheros(Film, _, _, _, Rating)),
+    Rating > 6.
+ 
+% Recommendation rule for "happy" female children
 complex_recommend("female", "happy", "child", Film) :-
-cartoon(Film, _, _, _, Rating),
-Rating > 7.0.
-
+    (cartoon(Film, _, _, _, Rating); 
+    superheros(Film, _, _, _, Rating)),
+    Rating > 6.
+ 
+% Recommendation rule for "sad" male children
 complex_recommend("male", "sad", "child", Film) :-
-        (cartoon(Film, _, _, _, Rating); superheros(Film, _, _, _, Rating)),
-Rating > 7.0.
-
+    (cartoon(Film, _, _, _, Rating); 
+    superheros(Film, _, _, _, Rating)),
+    Rating > 6.
+ 
+% Recommendation rule for "sad" female children
 complex_recommend("female", "sad", "child", Film) :-
-        (cartoon(Film, _, _, _, Rating); superheros(Film, _, _, _, Rating)),
-Rating > 7.0.
-
+    (cartoon(Film, _, _, _, Rating); 
+    superheros(Film, _, _, _, Rating)),
+    Rating > 6.
+ 
+% Recommendation rule for "neutral" male children
 complex_recommend("male", "neutral", "child", Film) :-
-        (cartoon(Film, _, _, _, Rating); superheros(Film, _, _, _, Rating)),
-Rating > 7.0.
-
+    (cartoon(Film, _, _, _, Rating); 
+    superheros(Film, _, _, _, Rating)),
+    Rating > 6.
+ 
+% Recommendation rule for "neutral" female children
 complex_recommend("female", "neutral", "child", Film) :-
-        (cartoon(Film, _, _, _, Rating); superheros(Film, _, _, _, Rating)),
-Rating > 7.0.
-
+    (cartoon(Film, _, _, _, Rating); 
+    superheros(Film, _, _, _, Rating)),
+    Rating > 6.
 %% user input 
-
+    
 
 start(Film) :-	
+    write('Expert System - Film Recommender'), nl,
+    write('Please answer the questions below'), nl,
+	write(" Are you already a user?"),nl
+    ,write('1- user'), nl,
+    write('2- not-user'), nl
+    ,read(User),(     
+    (User=:=1,start_guest(Film)) ; (   User=\=1,
+    write('What is your name? '), read(Name), nl,
+    write('Hello '), write(Name), nl,
 
-          
-              write('Expert System - Film Recommender'), nl,
-              write('Please answer the questions below'), nl,
-    
-              write('What is your name? '), read(Name), nl,
-              write('Hello '), write(Name),
-    
-              write('Could you please share your age?'),  nl,read(Age),age(Age,C),
-              write('What is your gender?'),nl,
-              write('1- Male'),nl,
-              write('2- Female'), 
-              read(Gender), nl,((Gender=:=1,G="male");(G="female")),
+    write('Could you please share your age?'),  nl, read(Age), age(Age, AgeCategory),
+    write('What is your gender?'), nl,
+    write('1- Male'), nl,
+    write('2- Female'), nl,
+    read(Gender), nl, 
+    ((Gender =:= 1, G = "male");
+     (Gender =:= 2, G = "female")),
 
-              write('How about your mood? '),nl,
-              write('1- Happy'),nl,
-              write('2- Sad'),nl,
-              write('3- Neutral'),nl,
-              read(Mood), nl, ((Mood=:=1,M="happy");(Mood=:=2,M="sad");(M="neutral")),
-    
-              write('Which genre of films do you enjoy?'),nl,
-              write('1- comedy'),nl,
-              write('2- superheros'),nl,
-              write('3- cartoon'),nl,
-              write('4- science_fiction'),nl,
-              write('5- action'),nl,
-              write('6- drama'),nl,
+    write('How about your mood? '), nl,
+    write('1- Happy'), nl,
+    write('2- Sad'), nl,
+    write('3- Neutral'), nl,
+    read(Mood), nl, 
+    ((Mood =:= 1, M = "happy");
+     (Mood =:= 2, M = "sad");
+     (Mood =:= 3, M = "neutral")),
 
-              read(Genre), write('We recommend you watch: '),nl,genre(Film,Genre),
-              complex_recommend(G,M, C, Film).
+    write('Which genre of films do you enjoy?'), nl,
+    write('1- comedy'), nl,
+    write('2- superheros'), nl,
+    write('3- cartoon'), nl,
+    write('4- science_fiction'), nl,
+    write('5- action'), nl,
+    write('6- drama'), nl,
+    read(GenreNumber), nl,
+
+    % Map GenreNumber to the corresponding genre string
+    genre_number_to_string(GenreNumber, GenreString),
+    
+    % Find a film of the chosen genre
+    genre(Film, GenreString),
+    
+    % Call the complex recommendation logic
+    complex_recommend(G, M, AgeCategory, Film))).
+
+% Helper predicate to map genre number to genre string
+genre_number_to_string(1, comedy).
+genre_number_to_string(2, superheros).
+genre_number_to_string(3, cartoon).
+genre_number_to_string(4, science_fiction).
+genre_number_to_string(5, action).
+genre_number_to_string(6, drama).
+
    
 start_filter(Film):-
     		  write('Expert System - Film filtering'), nl,
@@ -483,3 +520,52 @@ start_filter(Film):-
     
     		  write('We recommend you watch: '),nl,
     		  filtered_film(Film,Genre,Year,Rating), director_of_film(Film,Director).
+
+start_guest(Movies):-
+    write('Please answer the questions below'), nl,
+    
+    write('What is your name? '), read(Name), nl,
+    write('Hello '), write(Name), nl,
+    
+    write('Please choose your recommendation type:'), nl,
+    write('1- By Genre'), nl,
+    write('2- By Actor'), nl,
+    write('3- By Director'), nl,
+    read(Choice), nl,
+    handle_choice(Choice, Name,Movies).
+
+handle_choice(1, Name,Movies) :-
+    write('Please select a genre:'), nl,
+    write('1- Comedy'), nl,
+    write('2- Superheros'), nl,
+    write('3- Cartoon'), nl,
+    write('4- Science Fiction'), nl,
+    write('5- Action'), nl,
+    write('6- Drama'), nl,
+    read(GenreChoice), nl,
+    write('We recommend you watch: '),nl,
+    genre_choice_to_string(GenreChoice, Genre),
+    recommend_to_user_by_genre(Name, Genre, Movies).
+    
+
+handle_choice(2, Name,Movies) :-
+    write('We recommend you watch: '),nl,
+    recommend_to_user_by_actor(Name, Movies),
+    nl.
+
+handle_choice(3, Name,Movies) :-
+    write('We recommend you watch: '),nl,
+    recommend_to_user_by_director(Name, Movies),
+     nl.
+
+
+% Mapping genre choice number to genre string
+genre_choice_to_string(1, comedy).
+genre_choice_to_string(2, superheros).
+genre_choice_to_string(3, cartoon).
+genre_choice_to_string(4, science_fiction).
+genre_choice_to_string(5, action).
+genre_choice_to_string(6, drama).
+
+    
+   
