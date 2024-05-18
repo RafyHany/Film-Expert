@@ -304,6 +304,37 @@ film_with_actor(X,Z) :- film(X,_,Y,_,_) , list_member(Z,Y).
 
 actor_of_film(X,Y):- film(X,_,Y,_,_).
 
+
+
+
+recommend_to_user_by_genre(User, Genre, Movie) :-
+    user(User, _, _, PreferredComedies, PreferredSuperheroMovies, PreferredCartoons, PreferredSciFiMovies, PreferredActionMovies, PreferredDramas),
+    genre(Movie, Genre),
+    ( 
+        (Genre = comedy, member(Movie, PreferredComedies));
+        (Genre = superheros, member(Movie, PreferredSuperheroMovies));
+        (Genre = cartoon, member(Movie, PreferredCartoons));
+        (Genre = science_fiction, member(Movie, PreferredSciFiMovies));
+        (Genre = action, member(Movie, PreferredActionMovies));
+        (Genre = drama, member(Movie, PreferredDramas))
+    ).
+
+recommend_to_user_by_actor(User, UniqueMovies) :-
+    user(User, PreferredActors, _, _, _, _, _, _, _),
+    setof(Movie, PreferredActor^Actors^(
+        film(Movie, _, Actors, _, _),
+        member(PreferredActor, PreferredActors),
+        member(PreferredActor, Actors)
+    ), UniqueMovies).
+    
+recommend_to_user_by_director(User, UniqueMovies) :-
+    user(User, _, PreferredDirectors, _, _, _, _, _, _),
+    setof(Movie, Director^(
+        film(Movie, Director, _, _, _),
+        member(Director, PreferredDirectors)
+    ), UniqueMovies).
+
+
 director_of_film(X,Y):- film(X,Y,_,_,_).
 
 year_of_film(N, Y):- film(N, _, _, Y,_). % year of given film
