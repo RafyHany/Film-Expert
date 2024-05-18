@@ -393,6 +393,7 @@ Rating > 7.0.
 
 %% user input 
 
+
 start(Film) :-	
 
           
@@ -400,10 +401,10 @@ start(Film) :-
               write('Please answer the questions below'), nl,
     
               write('What is your name? '), read(Name), nl,
-              write('Hello '), write(Name), nl,
+              write('Hello '), write(Name),
     
-              write('Enter your age? '),  nl,read(Age),age(Age,C),
-              write('Enter your gender?'),nl,
+              write('Could you please share your age?'),  nl,read(Age),age(Age,C),
+              write('What is your gender?'),nl,
               write('1- Male'),nl,
               write('2- Female'), 
               read(Gender), nl,((Gender=:=1,G="male");(G="female")),
@@ -414,7 +415,7 @@ start(Film) :-
               write('3- Neutral'),nl,
               read(Mood), nl, ((Mood=:=1,M="happy");(Mood=:=2,M="sad");(M="neutral")),
     
-              write('Enter your genre of film you want?'),nl,
+              write('Which genre of films do you enjoy?'),nl,
               write('1- comedy'),nl,
               write('2- superheros'),nl,
               write('3- cartoon'),nl,
@@ -423,7 +424,7 @@ start(Film) :-
               write('6- drama'),nl,
 
               read(Genre), write('We recommend you watch: '),nl,genre(Film,Genre),
-              complex_recommend(G,M, C, Film) .
+              complex_recommend(G,M, C, Film).
    
 start_filter(Film):-
     		  write('Expert System - Film filtering'), nl,
@@ -432,12 +433,12 @@ start_filter(Film):-
               write('What is your name? '), read(Name), nl,
               write('Hello '), write(Name), nl,
     
-              write('from any year you choose? '),  nl,read(Year),
+              write('From any year you prefer to choose your films? '),  nl,read(Year),
     
-              write('Enter rating of film you want?'),nl,
+              write('What\'s the minimum rating you prefer for films?'),nl,
               read(Rating), nl,
 
-              write('Enter your genre of film you want?'),nl,
+              write('Which genre of films do you enjoy?'),nl,
               write('1- comedy'),nl,
               write('2- superheros'),nl,
               write('3- cartoon'),nl,
@@ -446,7 +447,7 @@ start_filter(Film):-
               write('6- drama'),nl,
               read(Genre),
     
-              write('Enter name of director you love'),nl,
+              write('Enter name of director you love:'),nl,
               read(Director), nl,
     
     		  write('We recommend you watch: '),nl,
