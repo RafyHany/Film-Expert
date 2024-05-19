@@ -45,7 +45,57 @@ action("Mission: Impossible - Fallout","Christopher McQuarrie" ,["Tom Cruise", "
 drama("The Shawshank Redemption","Frank Darabont" ,["Tim Robbins", "Morgan Freeman", "Bob Gunton", "William Sadler","Clancy Brown"], 1994, 9.3).
 drama("The Pursuit of Happyness","Gabriele Muccino",["Will Smith", "Jaden Smith", "Thandie Newton", "Brian Howe", "James Karen"],2006, 8.0).
 drama("12 Years a Slave","Steve McQueen",[ "Chiwetel Ejiofor", "Michael Fassbender", "Lupita Nyongo", "Sarah Paulson", "Benedict Cumberbatch"], 2013, 8.1).
- 
+
+%thriller
+thriller("Fight Club", "David Fincher", ["Brad Pitt", "Edward Norton", "Helena Bonham Carter", "Meat Loaf", "Jared Leto"], 1999, 8.8).
+thriller("The Usual Suspects", "Bryan Singer", ["Kevin Spacey", "Gabriel Byrne", "Chazz Palminteri", "Stephen Baldwin", "Kevin Pollak"], 1995, 8.5).
+thriller("Memento", "Christopher Nolan", ["Guy Pearce", "Carrie-Anne Moss", "Joe Pantoliano", "Mark Boone Junior", "Russ Fega"], 2000, 8.4).
+thriller("Shutter Island", "Martin Scorsese", ["Leonardo DiCaprio", "Mark Ruffalo", "Ben Kingsley", "Michelle Williams", "Emily Mortimer"], 2010, 8.2).
+thriller("The Departed", "Martin Scorsese", ["Leonardo DiCaprio", "Matt Damon", "Jack Nicholson", "Mark Wahlberg", "Martin Sheen"], 2006, 8.5).
+thriller("The Girl with the Dragon Tattoo", "David Fincher", ["Daniel Craig", "Rooney Mara", "Christopher Plummer", "Stellan Skarsgård", "Robin Wright"], 2011, 7.8).
+thriller("Oldboy", "Park Chan-wook", ["Choi Min-sik", "Yoo Ji-tae", "Kang Hye-jung", "Ji Dae-han", "Kim Byeong-ok"], 2003, 8.4).
+thriller("Heat", "Michael Mann", ["Al Pacino", "Robert De Niro", "Val Kilmer", "Jon Voight", "Tom Sizemore"], 1995, 8.2).
+thriller("Primal Fear", "Gregory Hoblit", ["Richard Gere", "Edward Norton", "Laura Linney", "John Mahoney", "Frances McDormand"], 1996, 7.7).
+thriller("Inside Man", "Spike Lee", ["Denzel Washington", "Clive Owen", "Jodie Foster", "Christopher Plummer", "Willem Dafoe"], 2006, 7.6).
+thriller("The Sixth Sense", "M. Night Shyamalan", ["Bruce Willis", "Haley Joel Osment", "Toni Collette", "Olivia Williams", "Trevor Morgan"], 1999, 8.1).
+thriller("No Country for Old Men", "Joel Coen", ["Tommy Lee Jones", "Javier Bardem", "Josh Brolin", "Woody Harrelson", "Kelly Macdonald"], 2007, 8.1).
+thriller("Collateral", "Michael Mann", ["Tom Cruise", "Jamie Foxx", "Jada Pinkett Smith", "Mark Ruffalo", "Peter Berg"], 2004, 7.5).
+thriller("Black Swan", "Darren Aronofsky", ["Natalie Portman", "Mila Kunis", "Vincent Cassel", "Barbara Hershey", "Winona Ryder"], 2010, 8.0).
+thriller("The Bourne Identity", "Doug Liman", ["Matt Damon", "Franka Potente", "Chris Cooper", "Clive Owen", "Brian Cox"], 2002, 7.9).
+thriller("Fargo", "Joel Coen", ["Frances McDormand", "William H. Macy", "Steve Buscemi", "Peter Stormare", "Harve Presnell"], 1996, 8.1).
+thriller("The Game", "David Fincher", ["Michael Douglas", "Sean Penn", "Deborah Kara Unger", "James Rebhorn", "Peter Donat"], 1997, 7.8).
+thriller("Prisoners", "Denis Villeneuve", ["Hugh Jackman", "Jake Gyllenhaal", "Viola Davis", "Paul Dano", "Maria Bello"], 2013, 8.1).
+thriller("Zodiac", "David Fincher", ["Jake Gyllenhaal", "Mark Ruffalo", "Anthony Edwards", "Robert Downey Jr.", "Brian Cox"], 2007, 7.7).
+
+%horror
+horror("The Exorcist", "William Friedkin", ["Ellen Burstyn", "Max von Sydow", "Linda Blair", "Lee J. Cobb", "Kitty Winn"], 1973, 8.1).
+horror("Get Out", "Jordan Peele", ["Daniel Kaluuya", "Allison Williams", "Bradley Whitford", "Catherine Keener", "Caleb Landry Jones"], 2017, 7.7).
+horror("A Nightmare on Elm Street", "Wes Craven", ["Heather Langenkamp", "Johnny Depp", "Robert Englund", "John Saxon", "Ronee Blakley"], 1984, 7.5).
+horror("Hereditary", "Ari Aster", ["Toni Collette", "Alex Wolff", "Milly Shapiro", "Gabriel Byrne", "Ann Dowd"], 2018, 7.3).
+horror("The Conjuring", "James Wan", ["Vera Farmiga", "Patrick Wilson", "Lili Taylor", "Ron Livingston", "Shanley Caswell"], 2013, 7.5).
+horror("Psycho", "Alfred Hitchcock", ["Anthony Perkins", "Janet Leigh", "Vera Miles", "John Gavin", "Martin Balsam"], 1960, 8.5).
+horror("The Shining", "Stanley Kubrick", ["Jack Nicholson", "Shelley Duvall", "Danny Lloyd", "Scatman Crothers", "Barry Nelson"], 1980, 8.4).
+horror("The Babadook", "Jennifer Kent", ["Essie Davis", "Noah Wiseman", "Daniel Henshall", "Hayley McElhinney", "Barbara West"], 2014, 6.8).
+horror("Scream", "Wes Craven", ["Neve Campbell", "Courteney Cox", "David Arquette", "Skeet Ulrich", "Drew Barrymore"], 1996, 7.3).
+horror("The Texas Chain Saw Massacre", "Tobe Hooper", ["Marilyn Burns", "Allen Danziger", "Paul A. Partain", "William Vail", "Teri McMinn"], 1974, 7.5).
+horror("The Others", "Alejandro Amenábar", ["Nicole Kidman", "Fionnula Flanagan", "Christopher Eccleston", "Alakina Mann", "James Bentley"], 2001, 7.6).
+horror("The Witch", "Robert Eggers", ["Anya Taylor-Joy", "Ralph Ineson", "Kate Dickie", "Harvey Scrimshaw", "Ellie Grainger", "Lucas Dawson"], 2015, 6.9).
+horror("The Blair Witch Project", "Daniel Myrick", ["Heather Donahue", "Michael C. Williams", "Joshua Leonard"], 1999, 6.5).
+horror("It Follows", "David Robert Mitchell", ["Maika Monroe", "Keir Gilchrist", "Olivia Luccardi", "Lili Sepe", "Jake Weary"], 2014, 6.8).
+horror("The Ring", "Gore Verbinski", ["Naomi Watts", "Martin Henderson", "David Dorfman", "Brian Cox", "Jane Alexander"], 2002, 7.1).
+horror("Rosemary's Baby", "Roman Polanski", ["Mia Farrow", "John Cassavetes", "Ruth Gordon", "Maurice Evans", "Ralph Bellamy"], 1968, 8.0).
+horror("The Cabin in the Woods", "Drew Goddard", ["Kristen Connolly", "Chris Hemsworth", "Anna Hutchison", "Fran Kranz", "Jesse Williams"], 2011, 7.0).
+horror("28 Days Later", "Danny Boyle", ["Cillian Murphy", "Naomie Harris", "Christopher Eccleston", "Brendan Gleeson", "Megan Burns"], 2002, 7.6).
+horror("The Sixth Sense", "M. Night Shyamalan", ["Bruce Willis", "Haley Joel Osment", "Toni Collette", "Olivia Williams", "Trevor Morgan"], 1999, 8.1).
+horror("The Others", "Alejandro Amenábar", ["Nicole Kidman", "Fionnula Flanagan", "Christopher Eccleston", "Alakina Mann", "James Bentley"], 2001, 7.6).
+horror("The Witch", "Robert Eggers", ["Anya Taylor-Joy", "Ralph Ineson", "Kate Dickie", "Harvey Scrimshaw", "Ellie Grainger"], 2015, 6.9).
+horror("The Blair Witch Project", "Daniel Myrick", ["Heather Donahue", "Michael C. Williams", "Joshua Leonard"], 1999, 6.5).
+horror("It Follows", "David Robert Mitchell", ["Maika Monroe", "Keir Gilchrist", "Olivia Luccardi", "Lili Sepe", "Jake Weary"], 2014, 6.8).
+horror("The Ring", "Gore Verbinski", ["Naomi Watts", "Martin Henderson", "David Dorfman", "Brian Cox", "Jane Alexander"], 2002, 7.1).
+horror("Rosemary's Baby", "Roman Polanski", ["Mia Farrow", "John Cassavetes", "Ruth Gordon", "Maurice Evans", "Ralph Bellamy"], 1968, 8.0).
+horror("The Cabin in the Woods", "Drew Goddard", ["Kristen Connolly", "Chris Hemsworth", "Anna Hutchison", "Fran Kranz", "Jesse Williams"], 2011, 7.0).
+horror("28 Days Later", "Danny Boyle", ["Cillian Murphy", "Naomie Harris", "Christopher Eccleston", "Brendan Gleeson", "Megan Burns"], 2002, 7.6).
+
 %preferences
 %data_collected_from_google_forms_quessionaire
 user("omar_aldawy",
@@ -366,76 +416,113 @@ filtered_film(Film, Genre, Year, Rating) :-
     film(Film,_,_,_,_),genre(Film,Genre),year_greater_than(Film,Year),
     rating_greater_than(Film,Rating).
 
-% Recommendation rule for "happy" adult males
+% adult
 complex_recommend("male", "happy", "adult", Film) :-
-    (action(Film, _, _, _, Rating); 
-    comedy(Film, _, _, _, Rating); 
-    drama(Film, _, _, _, Rating)),
+    (action(Film, Director, Actors, _, Rating);
+     comedy(Film, Director, Actors, _, Rating);
+     science_fiction(Film, Director, Actors, _, Rating)),
+    member(Director, ["Tom Shadyac", "Wes Anderson", "Chad Stahelski", "Christopher Nolan"]),
+    member(Actor, ["Matthew McConaughey", "Saoirse Ronan", "Keanu Reeves", "Jim Carrey"]),
+    member(Actor, Actors),
     Rating > 6.
  
-% Recommendation rule for "happy" adult females
 complex_recommend("female", "happy", "adult", Film) :-
-    (comedy(Film, _, _, _, Rating); 
-    drama(Film, _, _, _, Rating)),
+    (comedy(Film, Director, Actors, _, Rating);
+     science_fiction(Film, Director, Actors, _, Rating)),
+    member(Director, ["Harold Ramis", "Christopher Nolan"]),
+    member(Actor, ["Chevy Chase", "Leonardo DiCaprio"]),
+    member(Actor, Actors),
     Rating > 6.
- 
-% Recommendation rule for "sad" adult males
+
 complex_recommend("male", "sad", "adult", Film) :-
-    drama(Film, _, _, _, Rating),
+    (thriller(Film, Director, Actors, _, Rating);
+     horror(Film, Director, Actors, _, Rating);
+     science_fiction(Film, Director, Actors, _, Rating)),
+    member(Director, ["Darren Aronofsky", "Wes Craven", "Denis Villeneuve"]),
+    member(Actor, ["Natalie Portman", "Stephen Lang", "Ana de Armas"]),
+    member(Actor, Actors),
     Rating > 6.
  
-% Recommendation rule for "sad" adult females
 complex_recommend("female", "sad", "adult", Film) :-
-    drama(Film, _, _, _, Rating),
+    (thriller(Film, Director, Actors, _, Rating);
+     horror(Film, Director, Actors, _, Rating);
+     science_fiction(Film, Director, Actors, _, Rating)),
+    member(Director, ["Spike Lee", "James Cameron", "Denis Villeneuve"]),
+    member(Actor, ["Denzel Washington", "Heather Langenkamp", "Oscar Isaac"]),
+    member(Actor, Actors),
     Rating > 6.
- 
-% Recommendation rule for "neutral" adult males
+
 complex_recommend("male", "neutral", "adult", Film) :-
-    (superheros(Film, _, _, _, Rating); 
-    science_fiction(Film, _, _, _, Rating)),
+    (thriller(Film, Director, Actors, _, Rating);
+     horror(Film, Director, Actors, _, Rating);
+     science_fiction(Film, Director, Actors, _, Rating)),
+    member(Director, ["James Cameron", "The Wachowskis", "William Friedkin", "Joel Coen"]),
+    member(Actor, ["Arnold Schwarzenegger", "Keanu Reeves", "Ellen Burstyn", "Frances McDormand"]),
+    member(Actor, Actors),
     Rating > 6.
  
-% Recommendation rule for "neutral" adult females
+
 complex_recommend("female", "neutral", "adult", Film) :-
-    (superheros(Film, _, _, _, Rating); 
-    science_fiction(Film, _, _, _, Rating)),
+    (thriller(Film, Director, Actors, _, Rating);
+     horror(Film, Director, Actors, _, Rating);
+     science_fiction(Film, Director, Actors, _, Rating)),
+    member(Director, ["Denis Villeneuve", "Jordan Peele", "David Fincher", "Gregory Hoblit"]),
+    member(Actor, ["Timothée Chalamet", "Daniel Kaluuya", "Jake Gyllenhaal", "Richard Gere"]),
+    member(Actor, Actors),
     Rating > 6.
- 
-% Recommendation rule for "happy" male children
+
+% children
 complex_recommend("male", "happy", "child", Film) :-
-    (cartoon(Film, _, _, _, Rating); 
-    superheros(Film, _, _, _, Rating)),
+    (superheros(Film, Director, Actors, _, Rating);
+     cartoon(Film, Director, Actors, _, Rating)),
+    member(Director, ["Taika Waititi", "Jon Watts", "Mark Osborne", "Brad Bird"]),
+    member(Actor, ["Chris Hemsworth", "Tom Holland", "Dustin Hoffman", "Craig T. Nelson"]),
+    member(Actor, Actors),
     Rating > 6.
  
-% Recommendation rule for "happy" female children
 complex_recommend("female", "happy", "child", Film) :-
-    (cartoon(Film, _, _, _, Rating); 
-    superheros(Film, _, _, _, Rating)),
+    (superheros(Film, Director, Actors, _, Rating);
+     cartoon(Film, Director, Actors, _, Rating)),
+    member(Director, ["Taika Waititi", "Jon Watts", "Mark Osborne", "Brad Bird"]),
+    member(Actor, ["Chris Hemsworth", "Tom Holland", "Dustin Hoffman", "Craig T. Nelson"]),
+    member(Actor, Actors),
     Rating > 6.
- 
-% Recommendation rule for "sad" male children
+
 complex_recommend("male", "sad", "child", Film) :-
-    (cartoon(Film, _, _, _, Rating); 
-    superheros(Film, _, _, _, Rating)),
+    (superheros(Film, Director, Actors, _, Rating);
+     cartoon(Film, Director, Actors, _, Rating)),
+    member(Director, ["Taika Waititi", "Jon Watts", "Mark Osborne", "Brad Bird"]),
+    member(Actor, ["Chris Hemsworth", "Tom Holland", "Dustin Hoffman", "Craig T. Nelson"]),
+    member(Actor, Actors),
     Rating > 6.
  
-% Recommendation rule for "sad" female children
 complex_recommend("female", "sad", "child", Film) :-
-    (cartoon(Film, _, _, _, Rating); 
-    superheros(Film, _, _, _, Rating)),
+    (superheros(Film, Director, Actors, _, Rating);
+     cartoon(Film, Director, Actors, _, Rating)),
+    member(Director, ["Taika Waititi", "Jon Watts", "Mark Osborne", "Brad Bird"]),
+    member(Actor, ["Chris Hemsworth", "Tom Holland", "Dustin Hoffman", "Craig T. Nelson"]),
+    member(Actor, Actors),
     Rating > 6.
- 
-% Recommendation rule for "neutral" male children
+
 complex_recommend("male", "neutral", "child", Film) :-
-    (cartoon(Film, _, _, _, Rating); 
-    superheros(Film, _, _, _, Rating)),
+    (superheros(Film, Director, Actors, _, Rating);
+     cartoon(Film, Director, Actors, _, Rating)),
+    member(Director, ["Taika Waititi", "Scott Derrickson"]),
+    member(Actor, ["Chris Hemsworth", "Benedict Cumberbatch"]),
+    member(Actor, Actors),
     Rating > 6.
  
-% Recommendation rule for "neutral" female children
 complex_recommend("female", "neutral", "child", Film) :-
-    (cartoon(Film, _, _, _, Rating); 
-    superheros(Film, _, _, _, Rating)),
+    (superheros(Film, Director, Actors, _, Rating);
+     cartoon(Film, Director, Actors, _, Rating)),
+    member(Director, ["Joe Russo", "Scott Derrickson"]),
+    member(Actor, ["Chris Evans", "Benedict Cumberbatch"]),
+    member(Actor, Actors),
     Rating > 6.
+
+
+
+
 %% user input 
     
 
