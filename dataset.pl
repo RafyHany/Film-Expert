@@ -533,7 +533,7 @@ start(Film) :-
     ,write('1- user'), nl,
     write('2- not-user'), nl
     ,read(User),(     
-    (User=:=1,start_guest(Film)) ; (   User=\=1,
+    (User=:=1,start_user(Film)) ; (   User=\=1,
     write('What is your name? '), read(Name), nl,
     write('Hello '), write(Name), nl,
 
@@ -608,7 +608,7 @@ start_filter(Film):-
     		  write('We recommend you watch: '),nl,
     		  filtered_film(Film,Genre,Year,Rating), director_of_film(Film,Director).
 
-start_guest(Movies):-
+start_user(Movies):-
     write('Please answer the questions below'), nl,
     
     write('What is your name? '), read(Name), nl,
